@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>A web page with a button that invokes different functions in different events</p>
+  <button id="btn">Try it</button>                                                      <!-- button created -->
+  <p id="temp"></p>
+  
+  <script>
+   
+  // eventlisteners added
+   document.getElementById("btn").addEventListener("mouseover",mouseovser);               
+   document.getElementById("btn").addEventListener("click",mouseclick);
+   document.getElementById("btn").addEventListener("mouseleave",mouseleave);
+   
+  // functions added as per events 
+   function mouseovser(){
+    document.getElementById("temp").innerHTML = "Mouseover is done";
+    }
+    
+    function mouseclick(){
+    document.getElementById("temp").innerHTML = "mouseclick is done";
+    }
+    function mouseleave(){
+    document.getElementById("temp").innerHTML = "mouseout is done";
+    }
+    
+
+  </script>
+</body>
+</html>
